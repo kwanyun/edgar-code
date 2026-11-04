@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use EDGAR, please cite the accompanying paper."
+title: "EDGAR: Efficient Diffusion-Driven Gaussian Avatar Refinement via Synthetic Failure"
+type: software
+authors:
+  - family-names: Yun
+    given-names: Kwan
+  - family-names: Bang
+    given-names: Min-Hyeok
+  - family-names: Koo
+    given-names: Colette Suhjung
+  - family-names: Noh
+    given-names: Junyong
+url: "https://kwanyun.github.io/edgar/"
+preferred-citation:
+  type: article
+  title: "EDGAR: Efficient Diffusion-Driven Gaussian Avatar Refinement via Synthetic Failure"
+  authors:
+    - family-names: Yun
+      given-names: Kwan
+    - family-names: Bang
+      given-names: Min-Hyeok
+    - family-names: Koo
+      given-names: Colette Suhjung
+    - family-names: Noh
+      given-names: Junyong
+  journal: "ACM Transactions on Graphics"
+  notes: "Accepted for publication"

@@ -1,0 +1,8 @@
+{
+  "repository": "../../cap4d",
+  "native_config": "../../cap4d/configs/avatar/default.yaml",
+  "baseline": "../assets/cap4d/chkpnt100000.pth",
+  "source_paths": ["../assets/cap4d/reference_images", "../assets/cap4d/generated_images"],
+  "camera_count": 50,
+  "angles": [-60, -30, 30, 60]
+}

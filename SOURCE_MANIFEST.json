@@ -1,0 +1,117 @@
+{
+  "description": "Original source-text SHA256 values before release cleanup. These are not hashes of the modified release files.",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 15842,
+      "sha256": "b6207945851e878c5ce4aec6352f61f4741f724674d090b070cf0d468de54fa8"
+    },
+    {
+      "path": "src/POSTER_V2/LICENSE",
+      "bytes": 1067,
+      "sha256": "dccc0151cc15c54ac77b73aa6adf7db37cb6756ea5617aa1332f99910f6253c6"
+    },
+    {
+      "path": "src/POSTER_V2/models/PosterV2_8cls.py",
+      "bytes": 13679,
+      "sha256": "af13ad06806637bd9ebde6dea788d9791597f612b9158caf4ef61ce50a1462b6"
+    },
+    {
+      "path": "src/POSTER_V2/models/ir50.py",
+      "bytes": 9869,
+      "sha256": "fc259ee95dc1a2fc999f000fbcf522d87f14905b40acf4bc487b7785b5dcee00"
+    },
+    {
+      "path": "src/POSTER_V2/models/mobilefacenet.py",
+      "bytes": 7430,
+      "sha256": "747818ba7b96dcbb900c125a076c186573921402774e8901a3171c3145071bff"
+    },
+    {
+      "path": "src/POSTER_V2/models/vit_model_8.py",
+      "bytes": 32874,
+      "sha256": "ae61650d34098ee8b91a460c49f8b73a3bf5408cda274f01ffb45ead4c68d6a2"
+    },
+    {
+      "path": "src/dataset.py",
+      "bytes": 7556,
+      "sha256": "c8ef304c9326ba973eac748247663bc13bf4d0eca32844d6bbcedda42fab14e7"
+    },
+    {
+      "path": "src/loss.py",
+      "bytes": 2720,
+      "sha256": "b3116278b5a82924d5994b0ef60f58c718431573ce3d3ac97036ccec771f506c"
+    },
+    {
+      "path": "src/model.py",
+      "bytes": 13866,
+      "sha256": "2b5d1796ff0be363e36d12998a8061b7a2e45d5cbded032ecc7946bd99f449c6"
+    },
+    {
+      "path": "src/ref_unet_ada.py",
+      "bytes": 76504,
+      "sha256": "1405df4541fec2271bb652117b102562b6c556814040d15481757f4e8df76da4"
+    },
+    {
+      "path": "src/train_emo0.py",
+      "bytes": 19888,
+      "sha256": "2a3ab5e70e688d8994b86d76298c98a2cb557c599a972e76eadf2db841ffa9e1"
+    },
+    {
+      "path": "src/unet_2d_blocks.py",
+      "bytes": 138904,
+      "sha256": "086765ea1d48a231bcc30fbc4df460687dd364c6b5d62f6e734b9791fdf2aa34"
+    }
+  ],
+  "application_sources_reviewed": [
+    {
+      "path": "cap4d/gaussianavatars/train_edgar_group_novel_end.py",
+      "bytes": 29520,
+      "sha256": "0d169b55a327e4c74def9d5faf94c6a44162ed52c99237e83d123896abadc119"
+    },
+    {
+      "path": "cap4d/gaussianavatars/edgar/model.py",
+      "bytes": 15065,
+      "sha256": "721bd55728fea25ca69c79f7ca32e4f5cdaf29e8505cdd53d4580ff8dfdfc797"
+    },
+    {
+      "path": "cap4d/gaussianavatars/edgar/ref_unet_ada.py",
+      "bytes": 76510,
+      "sha256": "4236af2fe434023d4510989df368a390604440f1f59fabfd97f524c82c2e2944"
+    },
+    {
+      "path": "cap4d/gaussianavatars/edgar/unet_2d_blocks.py",
+      "bytes": 138904,
+      "sha256": "086765ea1d48a231bcc30fbc4df460687dd364c6b5d62f6e734b9791fdf2aa34"
+    },
+    {
+      "path": "cap4d/cur/base6.sh",
+      "bytes": 5359,
+      "sha256": "d519b05ec8db72f75b2f208b323fdbde4e54e8cc9ad427f04bf05f1948e28e1a"
+    },
+    {
+      "path": "RGBAvatar/edgar_train.py",
+      "bytes": 7425,
+      "sha256": "1823c6abeca60d610640b582d27fd63bc6af07e7e7b4b9f333095b947d8e1f02"
+    },
+    {
+      "path": "RGBAvatar/cur/run_all.sh",
+      "bytes": 4273,
+      "sha256": "33dd08e2b86b0c0ccc66aa24424e59fbec7711be33012840f1a57819a3cdcbc4"
+    },
+    {
+      "path": "RGBAvatar/model/mv_reconstruction.py",
+      "bytes": 25330,
+      "sha256": "4e1ecb0a9d677d23c258bca3d9fb60294c91556d2e6e22e5df502cc44285c7ab"
+    },
+    {
+      "path": "in_the_wild_rgbavatar/refine_edgar_insta.py",
+      "bytes": 4904,
+      "sha256": "dd92f835aa950853824eaf78d53aae686dc96c6420b4ac80a9260cc6400656d6"
+    },
+    {
+      "path": "in_the_wild_rgbavatar/run_edgar_trump.sh",
+      "bytes": 1281,
+      "sha256": "0b76251ead980441ebfebcbe0817b743862843b6a5cf71cbef2cae8c7d135152"
+    }
+  ]
+}

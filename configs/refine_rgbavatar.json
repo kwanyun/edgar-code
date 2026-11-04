@@ -1,0 +1,11 @@
+{
+  "repository": "../../RGBAvatar",
+  "native_config": "../../RGBAvatar/config/nersemble.yaml",
+  "baseline": "../assets/rgbavatar/model.ply",
+  "transforms": "../assets/subject/transforms_train.json",
+  "flame_model": "../../RGBAvatar/data/FLAME2023/flame2023.pkl",
+  "camera_indices": [8],
+  "camera_count": 50,
+  "angles": [-60, -30, 30, 60],
+  "raster_context": "cuda"
+}

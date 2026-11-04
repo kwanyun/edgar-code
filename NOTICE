@@ -1,0 +1,11 @@
+EDGAR: Efficient Diffusion-Driven Gaussian Avatar Refinement via Synthetic Failure
+Kwan Yun, Min-Hyeok Bang, Colette Suhjung Koo, and Junyong Noh.
+
+EDGAR modifies the diffusion network with reference conditioning and six-expert
+feed-forward modules, and supplies training and avatar-refinement interfaces.
+Original and third-party license notices are retained in LICENSE.txt and licenses/.
+
+This Stability AI Model is licensed under the Stability AI Community License,
+Copyright © Stability AI Ltd. All Rights Reserved.
+
+Powered by Stability AI.
