@@ -15,7 +15,10 @@ def arguments():
         help="Complete affectnet8-sd.pth feature-network state",
     )
     p.add_argument("--output", required=True, help="New run directory")
-    p.add_argument("--base-model", default="stabilityai/sd-turbo")
+    p.add_argument(
+        "--base-model",
+        help="Override the checkpoint's SD-Turbo location with a model ID or local directory",
+    )
     p.add_argument(
         "--initialize",
         help="Complete EDGAR checkpoint to fine-tune; starts a new optimizer",

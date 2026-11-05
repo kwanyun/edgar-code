@@ -31,8 +31,10 @@ python -m pip install -e '.[train,test]'
 For image inference alone, install with `pip install -e .`. Native avatar refinement
 also requires the selected baseline's renderer, dependencies, and licensed assets;
 see [the setup guide](docs/refinement.md). The first EDGAR run downloads SD-Turbo.
-For offline operation, populate the Hugging Face cache or use `--base-model` with a
-local SD-Turbo directory for training/image inference.
+For offline operation, populate the model caches. Training/image inference also
+accepts `--base-model /path/to/sd-turbo`, overriding the checkpoint's saved location.
+Training additionally uses torchvision's VGG16 and LPIPS weights; cache these
+before running without network access.
 
 ## Model assets
 
@@ -54,7 +56,9 @@ checkpoints/
 
 Use the Sapiens **pretraining feature** checkpoint, not a depth or segmentation
 checkpoint. POSTER must include the complete feature-network weights. Model files
-are distributed separately from the code ZIP and retain their applicable licenses.
+are packaged separately from the code and retain their applicable licenses.
+EDGAR weights and dataset packages have not yet been uploaded; this repository
+currently contains source code and documentation.
 
 ## Refine images
 

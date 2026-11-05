@@ -87,6 +87,42 @@ def test_incomplete_checkpoint_is_rejected(tmp_path):
         read_checkpoint(p)
 
 
+@pytest.mark.parametrize(
+    "saved_location,explicit_location,expected",
+    [
+        ("saved/sd-turbo", "relocated/sd-turbo", "relocated/sd-turbo"),
+        ("saved/sd-turbo", None, "saved/sd-turbo"),
+        (None, None, "stabilityai/sd-turbo"),
+        (None, "local/sd-turbo", "local/sd-turbo"),
+    ],
+)
+def test_base_model_location_precedence(
+    tmp_path, monkeypatch, saved_location, explicit_location, expected
+):
+    import edgar.model as network
+
+    sapiens = tmp_path / "sapiens.pt2"
+    sapiens.touch()
+    monkeypatch.setattr(torch.cuda, "is_available", lambda: True)
+    state = {"model_config": {"base_model": saved_location, "timestep": 249}}
+    monkeypatch.setattr(network, "read_checkpoint", lambda path: state)
+
+    class StopBeforeLoading(Exception):
+        pass
+
+    def check_location(location, **kwargs):
+        assert location == expected
+        raise StopBeforeLoading
+
+    monkeypatch.setattr(network.AutoTokenizer, "from_pretrained", check_location)
+    with pytest.raises(StopBeforeLoading):
+        network.EDGAR(
+            sapiens_path=sapiens,
+            checkpoint="checkpoint.pt" if saved_location is not None else None,
+            base_model=explicit_location,
+        )
+
+
 def test_poster_has_no_implicit_backbone_downloads():
     from edgar.vendor.poster.PosterV2_8cls import pyramid_trans_expr2
 

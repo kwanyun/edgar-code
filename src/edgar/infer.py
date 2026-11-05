@@ -13,7 +13,10 @@ def main():
     parser.add_argument("--input", required=True)
     parser.add_argument("--reference", required=True)
     parser.add_argument("--output", required=True, help="New output directory")
-    parser.add_argument("--base-model", default="stabilityai/sd-turbo")
+    parser.add_argument(
+        "--base-model",
+        help="Override the checkpoint's SD-Turbo location with a model ID or local directory",
+    )
     parser.add_argument("--seed", type=int, default=2026)
     parser.add_argument("--precision", choices=["fp32", "bf16"], default="fp32")
     parser.add_argument(

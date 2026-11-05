@@ -14,9 +14,13 @@ repositories and data were left unchanged; tests used isolated copies and output
 - Source parsing, CLI help, local documentation links, and example JSON checks.
 - Source distribution and wheel builds succeeded. The wheel installed into a
   separate target directory; all three installed CLI entry points passed help checks.
-- All **16 automated tests passed**, covering preprocessing, triplet order, validation behavior,
+- All **20 automated tests passed**, covering preprocessing, triplet order, validation behavior,
   checkpoint completeness, import isolation, POSTER feature loading, avatar
   optimization hooks, geometry-pickle compatibility, and archive integrity.
+- Checkpoint-location regression tests confirm that an explicit local base-model
+  path takes precedence, while omitted overrides preserve checkpoint defaults.
+  The override case failed before the correction and passed afterward. This
+  correction was checked on CPU; neural computation and model weights were unchanged.
 - Source-package inspection for common secret patterns, private server paths,
   debugger calls, unwanted assets, and ZIP/file integrity.
 

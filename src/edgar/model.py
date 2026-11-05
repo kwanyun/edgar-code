@@ -107,7 +107,7 @@ class EDGAR(torch.nn.Module):
         *,
         sapiens_path,
         checkpoint=None,
-        base_model="stabilityai/sd-turbo",
+        base_model=None,
         timestep=249,
         lora_rank_vae=4,
         device="cuda",
@@ -124,7 +124,10 @@ class EDGAR(torch.nn.Module):
         if state and "model_config" in state:
             config = state["model_config"]
             timestep = config["timestep"]
-            base_model = config["base_model"]
+            if base_model is None:
+                base_model = config["base_model"]
+        if base_model is None:
+            base_model = "stabilityai/sd-turbo"
         self.model_config = dict(
             base_model=base_model, timestep=timestep, num_experts=6
         )
