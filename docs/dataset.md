@@ -26,10 +26,12 @@ The adaptation constructs degraded Gaussian renderings, pairs them with ground
 truth and reference views, filters samples, and packs the triplet panels. Retain
 the included attribution, change notice, and license when redistributing it.
 
-**Both** contains those CAFCA shards plus 40 NeRSemble-derived shards. It is prepared
-for private staging only while permission to redistribute the NeRSemble-derived
+**Both** contains those CAFCA shards plus 40 NeRSemble-derived shards. It is hosted
+privately while permission to redistribute the NeRSemble-derived
 images is pending. It is not covered wholesale by the CAFCA license. Researchers
 can request upstream access through the [official NeRSemble data repository](https://github.com/tobias-kirschstein/nersemble-data).
+
+Both packages have separate [private download links and instructions](downloads.md).
 
 The packages exclude FLAME models, original videos, tracking meshes, model weights,
 and personal contact information. Training images remain subject to their source terms.
