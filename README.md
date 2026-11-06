@@ -167,11 +167,14 @@ application on an A6000 with identical FP32 output on the checked image.
 ## Citation
 
 ```bibtex
-@article{yun_edgar,
-  title   = {EDGAR: Efficient Diffusion-Driven Gaussian Avatar Refinement via Synthetic Failure},
-  author  = {Yun, Kwan and Bang, Min-Hyeok and Koo, Colette Suhjung and Noh, Junyong},
-  journal = {ACM Transactions on Graphics},
-  note    = {Accepted for publication}
+@misc{yun2026edgarefficientdiffusiondrivengaussian,
+      title={EDGAR: Efficient Diffusion-Driven Gaussian Avatar Refinement via Synthetic Failure}, 
+      author={Kwan Yun and Minhyeok Bang and Colette Suhjung Koo and Junyong Noh},
+      year={2026},
+      eprint={2611.07909},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR},
+      url={https://arxiv.org/abs/2611.07909}, 
 }
 ```
 
