@@ -4,7 +4,7 @@
 Kwan Yun · Min-Hyeok Bang · Colette Suhjung Koo · Junyong Noh  
 Accepted to **ACM Transactions on Graphics**
 
-[Project page](https://kwanyun.github.io/edgar/) · [Training data](docs/dataset.md) · [Avatar refinement](docs/refinement.md) · [Implementation details](docs/implementation.md)
+[Project page](https://kwanyun.github.io/edgar/) · [Training data](docs/dataset.md) · [Paper](https://arxiv.org/abs/2611.07909)
 
 EDGAR refines degraded Gaussian-avatar renderings using an identity reference and
 a single-step diffusion model. Refined views then supervise the existing 3D avatar,
