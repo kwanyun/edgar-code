@@ -31,7 +31,8 @@ privately while permission to redistribute the NeRSemble-derived
 images is pending. It is not covered wholesale by the CAFCA license. Researchers
 can request upstream access through the [official NeRSemble data repository](https://github.com/tobias-kirschstein/nersemble-data).
 
-Both packages have separate [private download links and instructions](downloads.md).
+CAFCA-only is publicly available; Both remains private. See their separate
+[download links and instructions](downloads.md).
 
 The packages exclude FLAME models, original videos, tracking meshes, model weights,
 and personal contact information. Training images remain subject to their source terms.

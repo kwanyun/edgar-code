@@ -1,13 +1,14 @@
-# Private downloads
+# Downloads
 
-The model and the two datasets are hosted separately from the code. Sign in with
-a GitHub account that has access to each repository. An unauthorized request can
-return 404 even when the private release exists.
+The model and the two datasets are hosted separately from the code. **CAFCA-only
+is public and can be downloaded in a browser without signing in.** The checkpoint
+and Both dataset remain private; sign in with a GitHub account that has access.
+An unauthorized request can return 404 even when a private release exists.
 
 | Package | Download | Contents |
 | --- | --- | --- |
 | EDGAR checkpoint | [Release](https://github.com/kwanyun/edgar-checkpoint/releases/tag/v1.0) · [ZIP](https://github.com/kwanyun/edgar-checkpoint/releases/download/v1.0/edgar_exp6.zip) | Six-expert inference weights, model card, license, notices, checksum |
-| CAFCA-only | [Release](https://github.com/kwanyun/edgar-set-cafca/releases/tag/v1.0) | 22,420 triplets; 11 TAR shards and metadata ZIP |
+| CAFCA-only | [Public release](https://github.com/kwanyun/edgar-set-cafca/releases/tag/v1.0) | 22,420 triplets; 11 TAR shards and metadata ZIP |
 | Both | [Release](https://github.com/kwanyun/edgar-set-both/releases/tag/v1.0) | 132,915 triplets; 51 TAR shards and metadata ZIP |
 
 The checkpoint uses both data sources; a separate CAFCA-only checkpoint is not
@@ -16,8 +17,10 @@ NeRSemble-derived images is obtained. Retain each package's licenses and notices
 
 ## Download with GitHub CLI
 
-Install the [GitHub CLI](https://cli.github.com/) and authenticate with an account
-that has access. Run the following commands from the EDGAR code checkout. Use new
+Install the [GitHub CLI](https://cli.github.com/) and authenticate; the private
+downloads require an account with repository access. CAFCA-only can also be
+downloaded without authentication through the browser links below.
+Run the following commands from the EDGAR code checkout. Use new
 destination directories so previous downloads or extracted files are preserved.
 
 ```bash
@@ -69,7 +72,8 @@ both the archives and the extracted images: about 12 GB each for CAFCA-only, and
 
 ## Download in a browser
 
-Open the corresponding private release and expand **Assets**. For the checkpoint,
+Open the corresponding release and expand **Assets**. CAFCA-only requires no login.
+For the checkpoint,
 download the ZIP and its `.sha256` file. For a dataset, download its metadata ZIP,
 the matching `.sha256` file, and every `.tar` asset. Extract the metadata ZIP into
 the package directory and place all TAR files in its `shards/` subdirectory, then

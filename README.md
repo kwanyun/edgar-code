@@ -57,9 +57,9 @@ checkpoints/
 Use the Sapiens **pretraining feature** checkpoint, not a depth or segmentation
 checkpoint. POSTER must include the complete feature-network weights. Model files
 are packaged separately from the code and retain their applicable licenses.
-The checkpoint and datasets are hosted in separate private GitHub repositories.
-Sign in with an account that has access; private links may show 404 otherwise.
-See [download instructions](docs/downloads.md) for authenticated downloads and
+The checkpoint and datasets are hosted in separate GitHub repositories.
+CAFCA-only is public; the checkpoint and Both dataset require repository access.
+Private links may show 404 without access. See [download instructions](docs/downloads.md) for downloads and
 checksum verification. The checkpoint was trained with both data sources.
 
 ## Refine images
@@ -145,7 +145,7 @@ described in [the refinement guide](docs/refinement.md).
 
 | Package | Triplets | Identities | Availability |
 | --- | ---: | ---: | --- |
-| CAFCA-only | 22,420 | 1,500 synthetic | [Private download](https://github.com/kwanyun/edgar-set-cafca/releases/tag/v1.0); CC BY-NC-SA 4.0 |
+| CAFCA-only | 22,420 | 1,500 synthetic | [Public download](https://github.com/kwanyun/edgar-set-cafca/releases/tag/v1.0); CC BY-NC-SA 4.0 |
 | Both | 132,915 | 1,599 | [Private download](https://github.com/kwanyun/edgar-set-both/releases/tag/v1.0); public redistribution permission pending |
 
 Each triplet is a 1536×512 image ordered **reference · ground truth · degraded
