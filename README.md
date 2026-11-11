@@ -49,7 +49,7 @@ checkpoints/
 
 | Asset | Source | Used by |
 | --- | --- | --- |
-| EDGAR six-expert checkpoint | [Private checkpoint ZIP](https://github.com/kwanyun/edgar-checkpoint/releases/download/v1.0/edgar_exp6.zip) → `edgar_exp6.pt` | Inference and refinement |
+| EDGAR six-expert checkpoint | [Public checkpoint ZIP](https://github.com/kwanyun/edgar-checkpoint/releases/download/v1.0/edgar_exp6.zip) → `edgar_exp6.pt` | Inference and refinement |
 | Sapiens 0.3B feature backbone | [Official TorchScript checkpoint](https://huggingface.co/facebook/sapiens-pretrain-0.3b-torchscript) | All stages |
 | POSTER V2, AffectNet 8 classes | [Official checkpoints](https://github.com/Talented-Q/POSTER_V2#checkpoints) | Training |
 | SD-Turbo | [Official model](https://huggingface.co/stabilityai/sd-turbo) | All stages; downloaded automatically |
@@ -58,7 +58,7 @@ Use the Sapiens **pretraining feature** checkpoint, not a depth or segmentation
 checkpoint. POSTER must include the complete feature-network weights. Model files
 are packaged separately from the code and retain their applicable licenses.
 The checkpoint and datasets are hosted in separate GitHub repositories.
-CAFCA-only is public; the checkpoint and Both dataset require repository access.
+The checkpoint and CAFCA-only dataset are public; the Both dataset requires repository access.
 Private links may show 404 without access. See [download instructions](docs/downloads.md) for downloads and
 checksum verification. The checkpoint was trained with both data sources.
 
